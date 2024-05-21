@@ -104,50 +104,26 @@
 html {
     font-size: var(--base-font-size);
 }
-body {
+body, p, .paragraph-text {
     @include p;
 }
-h1 {
+h1, .title-h1 {
     @include h1
 }
-h2 {
+h2, .title-h2 {
     @include h2
 }
-h3 {
+h3, .title-h3 {
     @include h3
 }
-h4 {
+h4, .title-h4 {
     @include h4
 }
-h5 {
+h5, .title-h5 {
     @include h5
 }
-h6 {
+h6, .title-h6 {
     @include h6
-}
-p {
-    @include p
-}
-.title-h1 {
-    @include h1;
-}
-.title-h2 {
-    @include h2;
-}
-.title-h3 {
-    @include h3;
-}
-.title-h4 {
-    @include h4;
-}
-.title-h5 {
-    @include h5;
-}
-.title-h6 {
-    @include h6;
-}
-.paragraph-text {
-    @include p;
 }
 .callout-text {
     @include callout-text;

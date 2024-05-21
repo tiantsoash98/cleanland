@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- <PageLoader/> -->
+        <PageLoader/>
         <HeaderMain/>
         <main>
             <slot />

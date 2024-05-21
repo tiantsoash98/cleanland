@@ -8,7 +8,7 @@
 const { init, destroy } = useInitScript()
 
 useHead({
-    title: 'CleanLand',
+    title: 'CleanLand | Natural and sustainable agricultural solutions',
 })
 
 

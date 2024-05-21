@@ -1,9 +1,8 @@
 <template>
-    <div class="page-loader container" v-if="pageLoaderState != 'loadedd'">
+    <div class="page-loader container" v-if="pageLoaderState != 'loaded'">
         <div class="page-loader__frame overlay"></div>
-        <div class="page-loader__wrapper row">
-            
-            <div class="page-loader__logo-wrapper col-2 col-start-6">
+        <div class="page-loader__wrapper pb-6 pb-md-14">
+            <div class="page-loader__logo-wrapper">
                 <IconLogoHorizontal class="page-loader__logo"/>
             </div>            
         </div>
@@ -33,18 +32,9 @@ const pageLoaderState = usePageLoaderState()
     &__wrapper {
         width: 100%;
         height: 100%;
-    }
-    &__logo-wrapper {
         display: flex;
-        align-items: center;
-        z-index: 1;
-    }
-    &__logo {
-        overflow: hidden;
-
-        & path {
-            transform: translateY(132px);
-        }
+        align-items: flex-end;
+        justify-content: center;
     }
 }
 </style>
