@@ -131,6 +131,7 @@ $breakpoints:(
 @media screen and (min-width: 992px) {
     :root {
         --grid-columns: 12;
+        --section-vertical-padding: var(--spacing-20);
         --base-font-size: 18px;
                 
         --title-h1: 9rem;
@@ -145,13 +146,12 @@ $breakpoints:(
 // lg
 @media screen and (min-width: 1281px) {
     :root {
-        --section-vertical-padding: var(--spacing-40);
+        
     }
 }
 
 // xl
 @media screen and (min-width: 1441px) {
     :root {
-        --section-vertical-padding: var(--spacing-50);
     }
 }

@@ -1,5 +1,5 @@
 <template>
-    <header class="header pt-4 pt-md-6 pb-4 pb-md-6">
+    <header class="header pt-4 pt-md-6 pb-4 pb-md-6 animate__header-in">
         <div class="header__content-wrapper container">
             <div class="row">
                 <div class="header__logo header__links col-4 col-md-4 col-lg-6">
@@ -9,14 +9,14 @@
                 </div>
                 <div class="col-full col-md-5 col-lg-4 col-start-md-5 col-start-lg-7">
                     <ul class="header__links header__links--center-verticaly">
-                        <li><NuxtLink to="/">Home</NuxtLink></li>
-                        <li class="ml-8"><NuxtLink to="/">Technology</NuxtLink></li>
-                        <li class="ml-8"><NuxtLink to="/">Mission</NuxtLink></li>
+                        <li class="header__animate-link-in"><NuxtLink to="/">Sustainability</NuxtLink></li>
+                        <li class="ml-8 header__animate-link-in"><NuxtLink to="/">Technology</NuxtLink></li>
+                        <li class="ml-8 header__animate-link-in"><NuxtLink to="/">Mission</NuxtLink></li>
                     </ul>
                 </div>
                 <div class="col-full col-md-4 col-lg-2">
                     <ul class="header__links header__links--center-verticaly header__links--align-end">
-                        <li><NuxtLink to="/"><ButtonMain text="Contact" color="white" :has-icon="true"/></NuxtLink></li>
+                        <li class="header__animate-link-in"><NuxtLink to="/"><ButtonMain text="Contact" color="white" :has-icon="true"/></NuxtLink></li>
                     </ul>
                 </div>
             </div>

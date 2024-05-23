@@ -1,6 +1,7 @@
 <template>
-    <main class="page mt-24" id="top">
+    <main class="page" id="top">
         <HomeHero/>
+        <HomePresentation/>
     </main>
 </template>
 

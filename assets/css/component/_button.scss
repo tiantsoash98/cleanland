@@ -8,6 +8,7 @@
     color: var(--button-text-color);
     cursor: pointer;
     padding: var(--button-padding);
+    display: flex;
 
     &--small {
         font-size: var(--callout-text);

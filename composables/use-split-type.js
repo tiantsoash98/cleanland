@@ -20,6 +20,10 @@ export default () => {
             wordClass: 'split-type--word'
         }) 
 
+        wrapSplitedLines()
+    }
+
+    const wrapSplitedLines = () => {
         // Wrap each line inside a div to allow text reveal by line
         document.querySelectorAll('.split-type--line-wrapper')
             .forEach(function(lineWrapper){
