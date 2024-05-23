@@ -2,12 +2,14 @@ export default () => {
     const { gsap, CustomEase } = useGsap()
     const defaultEase = ref("")
     const defaultDuration = ref(0)
+    const defaultDurationSlow = ref(0)
     const defaultStagger = ref(0)
 
     const initScrollAnimations = () => { 
         defaultDuration.value = 1
+        defaultDurationSlow.value = 2
         defaultStagger.value = 0.09
-        defaultEase.value = getComputedStyle(document.body).getPropertyValue('--default-ease') || "power2.inOut"
+        defaultEase.value = getComputedStyle(document.body).getPropertyValue('--default-ease') || "ease.out"
         CustomEase.create("default-ease", defaultEase.value)
 
         // Reveal text
@@ -38,24 +40,68 @@ export default () => {
         // Reveal block
         document.querySelectorAll('.section-reveal__block')
             .forEach(function(triggerElement){
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: triggerElement,
+                        start: "top 90%",
+                        end: "top top",
+                        toggleActions: "play none none none",
+                    }
+                }) 
+            
+                tl.from(triggerElement, {
+                    y: '10vh',
+                    opacity: 0,
+                    ease: "default-ease",
+                    duration: defaultDuration.value,
+                }, +0.3)
+            })
 
-                if(triggerElement.length){
-                    const tl = gsap.timeline({
-                        scrollTrigger: {
-                            trigger: triggerElement,
-                            start: "top 90%",
-                            end: "top top",
-                            toggleActions: "play none none none",
-                        }
-                    }) 
-              
-                    tl.from(triggerElement, {
-                        y: '5vh',
-                        opacity: 0,
-                        ease: "default-ease",
-                        duration: defaultDuration.value,
-                    })
-                }
+
+        // Swiper
+        document.querySelectorAll('.swiper')
+            .forEach(function(triggerElement){
+                let targetSlides = triggerElement.querySelectorAll('.swiper-slide')
+
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: triggerElement,
+                        start: "top 90%",
+                        end: "top top",
+                        toggleActions: "play none none none",
+                    }
+                }) 
+            
+                tl.from(targetSlides, {
+                    opacity: 0,
+                    scale: 0,
+                    stagger: defaultStagger.value,
+                    ease: "default-ease",
+                    duration: defaultDurationSlow.value,
+                })
+            })
+
+
+        // Img Parallax
+        document.querySelectorAll('.parallax')
+            .forEach(function(triggerElement){
+                let targetElement = triggerElement.querySelectorAll('.parallax__img')
+
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: triggerElement,
+                        start: "top bottom",
+                        end: "top top",
+                        scrub: true
+                    }
+                }) 
+            
+                tl.fromTo(targetElement, { 
+                    yPercent: -8
+                }, {
+                    yPercent: 8,
+                    ease: "none"
+                })
             })
     }
 

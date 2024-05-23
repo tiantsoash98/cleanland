@@ -2,6 +2,14 @@
     <main class="page" id="top">
         <HomeHero/>
         <HomePresentation/>
+        <HomeImgSlider/>
+        <HomeApproach/>
+        <ImgBanner 
+            :img="{ 
+                src: '/cleanland-banner.jpg', 
+                alt: 'Clean Fields'
+            }"
+        />
     </main>
 </template>
 

@@ -10,9 +10,7 @@
                         <p class="title-h4 split-type">We believe that farmers are the backbone of sustainable agriculture. Our solutions are designed with the farmer in mind, ensuring they are easy to use and reliable.</p>
                         <p class="title-h4 split-type mt-8">We work closely with the farming community to understand their challenges and needs, providing tailored solutions and ongoing support to help them transition to more sustainable practices.</p>
                     </div>
-                    
                     <ButtonMain class="mt-8" text="Discover our vision" :has-icon="true"/>
-                    <div style="height: 100vh;"></div>
                 </div>
             </div>
         </div>

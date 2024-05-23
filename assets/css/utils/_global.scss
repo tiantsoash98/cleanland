@@ -16,6 +16,11 @@
     }
 }
 
+.overflow {
+    &-hidden {
+        overflow: hidden;
+    }
+}
 
 .hide-on-below {
     @include media(large) {

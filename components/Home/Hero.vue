@@ -42,6 +42,20 @@ onMounted(() => {
         .to(".hero__video-overlay", {
             opacity: "+=0.3"
         }, '<')
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: targetSection.value,
+                //trigger element - viewport
+                start: "bottom top",
+                end: "bottom -1%",
+                toggleActions: "play none none reverse",
+            }
+        })
+        .set(targetSection.value, {
+            opacity: 0,
+            pointerEvents: "none"
+        })
     } 
 })
 </script>
