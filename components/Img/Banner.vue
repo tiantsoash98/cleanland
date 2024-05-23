@@ -9,14 +9,10 @@
                 loading="lazy"
             />
         </div>
-        <div class="img-banner__content-wrapper overlay pt-12">
+        <div class="img-banner__content-wrapper overlay pt-12 pb-12">
             <div class="img-banner__content-overlay overlay"></div>
-            <div class="container img-banner__content">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="title-h2">A green revolution</div>
-                    </div>
-                </div>
+            <div class="container img-banner__content section-reveal__text">
+                <div class="title-h2 split-type">A green revolution</div>
             </div>
         </div>
     </section>
@@ -37,7 +33,7 @@ const props = defineProps({
     }
     &__content-overlay {
         background-color: var(--color-neutral-950);
-        opacity: 0.2;
+        opacity: 0;
         z-index: 1;
     }
     &__content {

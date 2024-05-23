@@ -10,6 +10,7 @@
                 alt: 'Clean Fields'
             }"
         />
+        <HomeCTA/>
     </main>
 </template>
 

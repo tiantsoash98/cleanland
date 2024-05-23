@@ -50,10 +50,10 @@ export default () => {
                 }) 
             
                 tl.from(triggerElement, {
-                    y: '10vh',
+                    y: '8vh',
                     opacity: 0,
                     ease: "default-ease",
-                    duration: defaultDuration.value,
+                    duration: defaultDurationSlow.value,
                 }, +0.3)
             })
 
@@ -90,9 +90,9 @@ export default () => {
                 const tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: triggerElement,
-                        start: "top bottom",
-                        end: "top top",
-                        scrub: true
+                        start: "top 100%",
+                        end: "bottom 0%",
+                        scrub: true,
                     }
                 }) 
             
