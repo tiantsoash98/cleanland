@@ -1,7 +1,7 @@
 <template>
     <div class="cursor">
         <div class="cursor__content cursor__slider overlay">
-            <span>Slider</span>
+            <IconArrowNarrowRight class="cursor__icon cursor__icon--large"/>
         </div>
     </div>
 </template>
@@ -22,7 +22,7 @@
     transition: transform 0.3s var(--alias-default-ease),
                 width 0.3s var(--alias-default-ease),
                 height 0.3s var(--alias-default-ease),
-                opacity 0.3s var(--alias-default-ease), 
+                opacity 0.6s var(--alias-default-ease), 
                 background-color 0.3s var(--alias-default-ease);
     user-select: none;
     pointer-events: none;
@@ -30,13 +30,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
 
     &__content {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: var(--spacing-3);
         transition: transform 0.3s var(--alias-default-ease);
         transform: scale(0);
+    }
+
+    &__icon {
+        width: var(--paragraph-text);
+
+        &--large {
+            width: var(--title-h5);
+        }
     }
 
     &--hidden {
@@ -44,6 +54,7 @@
     }
 
     &--link {
+        opacity: 1;
         width: 20px;
         height: 20px;
     }
@@ -51,7 +62,9 @@
     &--slider {
         width: var(--title-h1);
         height: var(--title-h1);
-        background-color: var(--color-neutral-100);
+        background-color: var(--color-neutral-900);
+        color: var(--color-neutral-0);
+        opacity: 1;
 
         & #{$root}__slider {
             transform: scale(1);
