@@ -13,8 +13,8 @@ export default () => {
             duration: 0.016,
             repeat: -1,
             onRepeat: function () {
-                posX.value += (mouseX.value - posX.value) / 6;
-                posY.value += (mouseY.value - posY.value) / 6;
+                posX.value += (mouseX.value - posX.value) / 9;
+                posY.value += (mouseY.value - posY.value) / 9;
 
                 gsap.set(cursor.value, {
                     left: posX.value,
@@ -34,7 +34,7 @@ export default () => {
         
         // Hide on leave
         document.addEventListener('mouseleave', (e) => {
-            cursor.value.classList.add("cursor-hidden")
+            cursor.value.classList.add("cursor--hidden")
         })
 
         // Show on enter
@@ -59,12 +59,12 @@ export default () => {
         let sliders = document.querySelectorAll(".img-slider")
         sliders.forEach(function(elem) {
             elem.addEventListener("mouseenter", function() {
-                cursor.value.classList.add("cursor--img-slider")
+                cursor.value.classList.add("cursor--slider")
             })
         })
         sliders.forEach(function(elem) {
             elem.addEventListener("mouseleave", function() {
-                cursor.value.classList.remove("cursor--img-slider")
+                cursor.value.classList.remove("cursor--slider")
             })
         })
         

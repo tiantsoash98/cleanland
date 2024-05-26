@@ -111,10 +111,12 @@ $breakpoints:(
     --section-vertical-padding: var(--spacing-20);
 
     // Z-index
+    --z-index-cursor: 2000;
     --z-index-loader: 1000;
     --z-index-nav: 100;
     --z-index-transition: 95;
     --z-index-menu: 90;
+
 
     // Easing
     --default-animation-duration: 0.7s;

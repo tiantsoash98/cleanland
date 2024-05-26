@@ -4,7 +4,7 @@
             <h1 class="title-h4">
                 <div class="split-type animate__title-in">Empowering agricultural <br>professionals with innovative<br>solutions in harmony with nature.</div>
             </h1>
-            <ButtonMain :has-icon="true" text="Explore" color="white" class="mt-12"/>
+            <ButtonMain :has-icon="true" text="Explore" color="white" class="mt-12 link"/>
         </div>
         <div class="hero__video-wrapper overlay animate__video-in">
             <div class="hero__video-overlay overlay"></div>
