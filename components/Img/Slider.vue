@@ -47,4 +47,8 @@ const spaceBetween = 20
 const slidesOffset = 27
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.swiper {
+    height: 100%;
+}
+</style>

@@ -7,7 +7,7 @@
                         <nuxt-img
                             src="/cleanland-cta.jpg"
                             class="img img-load" 
-                            sizes="sm:30vw md:30vw lg:30vw 30vw"
+                            sizes="sm:30vw md:30vw lg:30vw 100vw"
                             role="presentation"
                             loading="lazy"
                         />
@@ -32,7 +32,8 @@
 <style lang="scss" scoped>
 .home-cta {
     &__img {
-        transform: translateY(-100%);
+        height: 50svh;
+        transform: translateY(-50%);
     }
 }
 </style>

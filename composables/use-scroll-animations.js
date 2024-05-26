@@ -72,12 +72,28 @@ export default () => {
                     }
                 }) 
             
+                // tl.fromTo(targetSlides, {
+                    
+                // }, {
+                //     opacity: 0,
+                //     scale: 0,
+                //     stagger: defaultStagger.value,
+                //     ease: "default-ease",
+                //     duration: defaultDurationSlow.value,
+                // })
+                // tl.fromTo(targetSlides, {
+                //     clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
+                // }, {
+                //     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                //     stagger: defaultStagger.value,
+                //     ease: "default-ease",
+                //     duration: defaultDurationSlow.value,
+                // })
                 tl.from(targetSlides, {
                     opacity: 0,
-                    scale: 0,
                     stagger: defaultStagger.value,
                     ease: "default-ease",
-                    duration: defaultDurationSlow.value,
+                    duration: defaultDuration.value,
                 })
             })
 
@@ -90,8 +106,8 @@ export default () => {
                 const tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: triggerElement,
-                        start: "top 100%",
-                        end: "bottom 0%",
+                        start: "top bottom",
+                        end: "bottom top",
                         scrub: true,
                     }
                 }) 

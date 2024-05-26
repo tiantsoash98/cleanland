@@ -14,4 +14,8 @@
 
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.home-slider {
+    height: 60vh;
+}
+</style>

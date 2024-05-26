@@ -1,12 +1,11 @@
 <template>
     <div class="footer-copyrights">
         <div class="container">
-            <div class="footer-copyrights__wrapper">
-                <div class="footer-copyright__copyright">©2024 CleanLand</div>
-                <div class="footer-copyright__copyright">Privacy / Terms</div>
-                <div class="footer-copyright__site">Site by Tiantsoa</div>
-                <div class="footer-copyright__back-to-top">
-                    <ButtonMain class="button" text="Back to top"/>
+            <div class="footer-copyrights__wrapper row">
+                <div class="col-8">©2024 CleanLand</div>
+                <div class="col-2 footer-copyrights__develop">Site by Tiantsoa</div>
+                <div class="col-2">
+                    <ButtonMain class="button" text="Back to top" :has-icon="true"/>
                 </div>
             </div>
         </div>
@@ -18,11 +17,19 @@
 </script>
 
 <style lang="scss" scoped>
-.footer-copyrights {
+.footer-copyrights{
     &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        & > div {
+            display: flex;
+            align-items: center;
+
+            &:last-child {
+                justify-content: flex-end;
+            }
+        }
+    }
+    &__develop {
+        opacity: 0.4;
     }
 }
 </style>
