@@ -1,6 +1,9 @@
+
 export default () => {
     // Lenis scroll
     const { initLenis, destroyLenis } = useLenis()
+    // Cursor
+    const { initCursor, destroyCursor } = useCursor()
     // Scroll window listener
     const { initScrollDown, destroyScrollDown } = useScrollDown()
     // Img loaded
@@ -26,6 +29,7 @@ export default () => {
         // Play Page loader out when everything ready if first load
         initPageLoader()
         initLenis()
+        initCursor()
         initScrollAnimations()
     }
 
@@ -37,6 +41,7 @@ export default () => {
         destroyMarquee()
         destroyPageLoader()
         destroyLenis()
+        destroyCursor()
         destroyScrollAnimations()
     }
 

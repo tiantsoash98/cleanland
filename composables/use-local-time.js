@@ -5,7 +5,6 @@ export default () => {
         hour12: false,
         minute: 'numeric',
     }
-
     const localTimeState = useLocalTimeState()
     var interval = null
     const formatter = new Intl.DateTimeFormat([], optionsTime)

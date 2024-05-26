@@ -34,8 +34,8 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
-import { FreeMode, Navigation } from 'swiper/modules'
-const modules = [FreeMode, Navigation]
+import { Navigation } from 'swiper/modules'
+const modules = [Navigation]
 
 const props = defineProps({
     imgList: {

@@ -2,7 +2,6 @@
 // https://gsap.com/community/forums/topic/27739-change-marquee-direction-on-scroll/
 // Marquee class : .marquee 
 export default () => {
-    
     const scrollDown = useScrollDownState()
     const marqueeTween = ref(null)
 

@@ -119,7 +119,8 @@ $breakpoints:(
     // Easing
     --default-animation-duration: 0.7s;
     --default-ease: '0.62, 0.05, 0.01, 0.99';
-    --alias-default-ease: cubic-bezier(0.68, 0.03, 0.14, 0.94);
+    --alias-default-ease: cubic-bezier(0.62, 0.05, 0.01, 0.99);
+
 
     // Navbar 
     --default-show-nav-menu-breakpoint: 991px;

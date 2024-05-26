@@ -18,7 +18,7 @@
                         <p class="title-h4 split-type">Be a part of the movement and help create a sustainable future for agriculture.</p>
                         <p class="title-h4 split-type mt-8">Connect with us to learn more about our products, services, and how we can support your farming endeavors.</p>
                     </div>
-                    <ButtonMain class="mt-12" text="Contact us" :has-icon="true"/>
+                    <ButtonMain class="mt-12 link" text="Contact us" :has-icon="true"/>
                 </div>
             </div>
         </div>

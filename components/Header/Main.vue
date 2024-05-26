@@ -9,14 +9,14 @@
                 </div>
                 <div class="col-full col-md-5 col-lg-4 col-start-md-5 col-start-lg-7">
                     <ul class="header__links header__links--center-verticaly">
-                        <li class="header__animate-link-in"><NuxtLink to="/">Sustainability</NuxtLink></li>
-                        <li class="ml-8 header__animate-link-in"><NuxtLink to="/">Technology</NuxtLink></li>
-                        <li class="ml-8 header__animate-link-in"><NuxtLink to="/">Mission</NuxtLink></li>
+                        <li class="header__animate-link-in"><NuxtLink to="/" class="link">Sustainability</NuxtLink></li>
+                        <li class="ml-8 header__animate-link-in"><NuxtLink to="/" class="link">Technology</NuxtLink></li>
+                        <li class="ml-8 header__animate-link-in"><NuxtLink to="/" class="link">Mission</NuxtLink></li>
                     </ul>
                 </div>
                 <div class="col-full col-md-4 col-lg-2">
                     <ul class="header__links header__links--center-verticaly header__links--align-end">
-                        <li class="header__animate-link-in"><NuxtLink to="/"><ButtonMain text="Contact" color="white" :has-icon="true"/></NuxtLink></li>
+                        <li class="header__animate-link-in"><NuxtLink to="/" class="link"><ButtonMain text="Contact" color="white" :has-icon="true"/></NuxtLink></li>
                     </ul>
                 </div>
             </div>

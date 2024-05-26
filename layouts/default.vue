@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Cursor/>
         <HeaderMain/>
         <main>
             <slot />
